@@ -45,3 +45,44 @@ print(identidad_2)
 #Para encontrar dimensiones
 a = np.array([(1,2,3),(4,5,6),(7,8,9)])
 print(a.ndim)
+
+'''Para encontrar el tipo de datos que tiene 
+la matriz'''
+a = np.array([(1,2,3,3)])
+print(a.dtype)
+#Para encontrar el tamaño y forma de la matriz
+a = np.array([(1,2,3,4,5,6),(1,2,3,3,4,5)])
+print(a.size)
+print(a.shape)
+#Para cambiar el tamaño y forma de la matriz
+a = np.array([(6,7,8),(2,3,5)])
+print(a)
+a = a.reshape(1,6)
+print(a)
+
+#Para seleccionar un solo elemento de la matriz 
+a = np.array([(1,2,3,4),(5,6,7,8)])
+print(a[0,2])
+
+#Para seleccionar toda la fila ubicada en x columna
+a = np.array([(1,2,3,4),(5,6,7,8)])
+print(a[0:,3])
+
+#COMO HACER OPERACIONES ENTRE MATRICES
+a = np.array([2,4,8])
+print(a.min()) #encontrar minimo
+print(a.max()) #encontrar maximo
+print(a.sum()) #encontrar suma
+#--------
+a = np.array([(1,2,3),(4,5,6)])
+print(np.sqrt(a))
+print(np.std(a))
+
+#Operaciones entre matrices
+x = np.array([(1,2,3),(3,4,5)])
+y = np.array([(1,2,3),(3,4,5)])
+
+print(x+y)
+print(x-y)
+print(x*y)
+print(x/y)
